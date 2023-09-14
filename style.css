@@ -20,7 +20,7 @@ body{
     font-family: system-ui, sans-serif;
     perspective: 500px;
     background: linear-gradient(lime,white);
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
 .card {
@@ -63,12 +63,19 @@ body{
     display: flex;
     align-items: center;
     background: linear-gradient(white, blue);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    flex-direction: column;
 }
 
 #tyl_kar{
     grid-area: "menu2";
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background: linear-gradient(white, blue);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
 
 #orgin{
