@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40vh 60vh;
+    grid-template-areas: 
+    "top top"
+    "menu1 menu2";
+}
+
+#top{
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, sans-serif;
+    perspective: 500px;
+    background: linear-gradient(lime,white);
+    border-bottom: 2px solid black;
+}
+
+.card {
+    padding: 1em;
+    text-align: right;
+
+    width:  400px;
+    height: 300px;
+    box-shadow: 0 1px 5px #00000099;
+    
+    border-radius: 10px;
+    background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+    background-size: cover;
+    
+    position: relative;
+    
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+}
+
+.card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.card .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+#menu{
+    grid-area: "menu1";
+    display: flex;
+    align-items: center;
+    background: linear-gradient(white, blue);
+}
+
+#tyl_kar{
+    grid-area: "menu2";
+    display: flex;
+    flex-direction: column;
+}
+
+#orgin{
+    background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+    display: none;
+    width: 200px;
+    height: 100px;
+}
+
+#tyl1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ39lEEBXeaaX1MdNq4S7Lk1eimKA8tpjlCutCfwt7BeNihA15-mc_T_8a8I4OeSv-xM68&usqp=CAU);
+    width: 200px;
+    height: 100px;
+}
+
+#tyl2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmL33iK8k5JLb9rM8cjFNNrfwEGqmtSrnK0g&usqp=CAU);
+    width: 200px;
+    height: 100px;
+}
+
+#tyl3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTljK8-irjNwLUOMskZV4ihScR9bkD8Y_txSA&usqp=CAU);
+    width: 200px;
+    height: 100px;
+}
+
+#tyl4{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a5uCP-n4teeW2SApcIqUrcQApev8ZVCJkA&usqp=CAU);
+    width: 200px;
+    height: 100px;
+}
+
+#paypal{
+    height: 25px;
+    width: 25px;
+}
