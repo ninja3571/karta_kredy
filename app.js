@@ -89,6 +89,17 @@ function change4(){
 }
 
 function uzytk(){
-    const uztk = document.getElementById("uzytkownik")
+    const uztk = document.getElementById("uzytkownik").value
     document.getElementById("uzytk").innerText=uztk
+    document.getElementById("uzytk").style.color="yellow"
+}
+function nr_kar(){
+    const numer = document.getElementById("nr_kar").value
+    document.getElementById("nr_karty").innerHTML=numer
+    document.getElementById("nr_karty").style.color="yellow"
+}
+function data(){
+    const date = document.getElementById("data")
+    document.getElementById("date1").innerHTML=date
+    document.getElementById("date1").style.color="yellow"
 }

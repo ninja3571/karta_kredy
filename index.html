@@ -10,14 +10,19 @@
     <div id="top">
         <div class="card">
             <img id="paypal" src="https://e7.pngegg.com/pngimages/552/133/png-clipart-paypal-computer-icons-logo-business-paypal-blue-angle.png">
-            <h2 id="nr_kar"></h2>
+            <h2 id="nr_karty"></h2>
             <h2 id="uzytk"></h2>
+            <h3 id="date1"></h3>
             <div class="glow"></div>
         </div>
     </div>
     <div id="menu">
-        <input id="nr_kar" type="text" onchange="nr_kar()">
+        <h1>Kliknij poza pole tekstowe by dane pojawily sie na karcie</h1>
+        <h4>Wpisz numer karty</h4>
+        <input id="nr_kar" type="number" onchange="nr_kar()">
+        <h4>Wpisz imie i nazwisko uzytkownika</h4>
         <input id="uzytkownik" type="text" onchange="uzytk()">
+        <h4>wpisz date utworzenia karty</h4>
         <input id="data" type="date" onchange="data()">
     </div>
     <div id="tyl_kar">
