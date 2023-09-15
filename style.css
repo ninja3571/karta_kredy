@@ -118,3 +118,20 @@ body{
     height: 25px;
     width: 25px;
 }
+#date1{
+    margin-top: 20px;
+    color: yellow;
+}
+#dane{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 10px;
+    margin-top: 95px;
+}
+#uzytk{
+    color: lime;
+}
+#nr_karty{
+    color: yellow;
+}
