@@ -2,6 +2,7 @@ const $card = document.querySelector('.card');
 let bounds;
 
 function rotateToMouse(e) {
+  $card.classList.remove("flip-vertical-right-alter")
   const mouseX = e.clientX;
   const mouseY = e.clientY;
   const leftX = mouseX - bounds.x;
