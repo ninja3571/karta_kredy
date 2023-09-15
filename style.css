@@ -24,6 +24,7 @@ body{
 }
 
 .card {
+    z-index: 10;
     padding: 1em;
     text-align: right;
 
@@ -44,11 +45,13 @@ body{
 }
 
 .card:hover {
+    z-index: 10;
     transition-duration: 150ms;
     box-shadow: 0 5px 20px 5px #00000044;
 }
 
 .card .glow {
+    z-index: 10;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -115,23 +118,32 @@ body{
 }
 
 #paypal{
+    z-index: 10;
     height: 25px;
     width: 25px;
 }
 #date1{
-    margin-top: 20px;
+    z-index: 10;
     color: yellow;
 }
 #dane{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     margin-left: 10px;
-    margin-top: 95px;
+    margin-top: 45px;
 }
 #uzytk{
+    z-index: 10;
     color: lime;
 }
 #nr_karty{
+    z-index: 10;
+    margin-top: 95px;
     color: yellow;
+}
+#obrotowiec{
+    font-size: 150%;
+    height: 70px;
+    width: 100px;
 }

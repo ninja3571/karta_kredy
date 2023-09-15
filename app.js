@@ -101,3 +101,13 @@ function data(){
     const date = document.getElementById("data").value
     document.getElementById("date1").innerHTML=date
 }
+function obrot1(){
+  $card.classList.remove("flip-vertical-right-alter")
+  $card.classList.add("flip-vertical-right")
+  console.log("jeden")
+}
+function obrot2(){
+  $card.classList.remove("flip-vertical-right")
+  $card.classList.add("flip-vertical-right-alter")
+  console.log("dwa")
+}
